@@ -7,13 +7,15 @@ import { GenericListComponent } from './utilities/generic-list/generic-list.comp
 
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
+import { RatingComponent } from './utilities/rating/rating.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesListComponent,
     GenericListComponent,
-    MenuComponent
+    MenuComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

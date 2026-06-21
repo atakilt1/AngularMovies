@@ -68,5 +68,9 @@ export class AppComponent implements OnInit {
   moviesInTheaters: any;
   moviesInReleases: any;
 
+  handleRating(rate: number){
+    alert(`The user selected the ${rate}`);
+  }
+
   title = 'Welcome to Tabor Movie Store';
 }
