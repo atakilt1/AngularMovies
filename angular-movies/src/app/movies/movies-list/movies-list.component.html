@@ -3,6 +3,7 @@
 
 <div *ngIf="movies?.length === 0">There are no records to display</div>
 
+<ng-container *ngIf="movies && movies.length > 0">
 <div *ngFor="let movie of movies; let index = index" class="movie-item">
   <div class="movie-info">
     <span class="movie-number">{{ index + 1 }}.</span>
@@ -12,3 +13,4 @@
   </div>
   <button class="remove-btn" (click)="remove(index)">Remove</button>
 </div>
+</ng-container>
