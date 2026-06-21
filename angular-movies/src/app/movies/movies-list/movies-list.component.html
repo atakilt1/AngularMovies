@@ -1,0 +1,15 @@
+<div *ngIf="!movies" class="loader"></div>
+
+<div *ngIf="movies?.length === 0">There are no records to display</div>
+
+<div *ngFor="let movie of movies;let index = index" class="movie-container">
+  <div>
+  {{ index + 1 }}. {{ movie.title | uppercase }}
+</div>
+<div>
+  {{ movie.releaseDate | date: "dd-MMM-yyyy" | uppercase}}
+</div>
+<div>
+ {{ movie.price| currency}}
+</div>
+</div>
