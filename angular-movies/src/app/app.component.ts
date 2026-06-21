@@ -22,18 +22,7 @@ export class AppComponent implements OnInit {
       },
     ];
 
-    this.moviesInReleases =  [
-      {
-        title: 'Avengers',
-        releaseDate: new Date(),
-        price: 500.99,
-      },
-      {
-        title: 'Toy Story',
-        releaseDate: new Date('2020-05-02'),
-        price: 600.99,
-      },
-    ];
+    this.moviesInReleases =[] ;
   }
 
   moviesInTheaters: any;
