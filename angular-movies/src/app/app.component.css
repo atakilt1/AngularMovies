@@ -5,3 +5,7 @@ h2 {
   color: #1f2937;
   font-family: Inter, sans-serif;
 }
+
+.container{
+  margin: 20px;
+}

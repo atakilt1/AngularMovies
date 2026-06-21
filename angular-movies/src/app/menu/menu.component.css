@@ -1,0 +1,15 @@
+mat-toolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* On mobile, make it smaller */
+@media (max-width: 600px) {
+    mat-toolbar {
+        height: 56px;
+        font-size: 14px;
+    }
+}
