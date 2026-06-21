@@ -7,9 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrl: './movies-list.component.css',
 })
 export class MoviesListComponent implements OnInit {
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   @Input()
   movies: any;
+
+  remove(index: number) {
+    this.movies.splice(index,1);
+  }
 }
